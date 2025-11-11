@@ -27,6 +27,12 @@
           <a href="#contact" class="px-4 py-2 rounded-xl border border-slate-600 hover:border-blue-400 text-sm">
             Contact Me
           </a>
+          <button
+            onclick="handleResumeClick()"
+            class="px-4 py-2 rounded-xl bg-slate-800 border border-slate-600 hover:border-blue-400 hover:bg-slate-900 text-sm"
+          >
+            View Resume
+          </button>
         </div>
       </div>
       <div class="w-full md:w-56">
@@ -211,7 +217,7 @@
           </p>
           <ul class="list-disc list-inside mt-1 space-y-1">
             <li>Built with Flutter (frontend) and Node.js/Express (backend)</li>
-            <li>MongoDB for data storage and Firebase for real-time style updates</li>
+            <li>MongoDB for data storage and Firebase-style updates</li>
             <li>Image uploads and document management using cloud storage</li>
           </ul>
           <p class="mt-1 text-slate-400">
@@ -306,12 +312,23 @@
         <p>
           LinkedIn:
           <a href="https://www.linkedin.com/in/ritch-marc-bustillo-842a16273/" target="_blank" rel="noopener noreferrer" class="text-blue-300 hover:underline">
-            linkedin.com/in/ritch-marc-bustillo
+            linkedin.com/in/ritch-marc-bustillo-842a16273/
           </a>
         </p>
       </div>
     </section>
 
   </div>
+
+  <script>
+  function handleResumeClick() {
+    const confirmDownload = confirm("Do you want to view or download my resume?");
+    if (confirmDownload) {
+      // Opens your resume inside the assets folder
+      window.open("assets/Ritch Marc Sison Bustillo -SV.pdf.pdf", "_blank");
+    }
+  }
+</script>
+
 </body>
 </html>
